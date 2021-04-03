@@ -13,9 +13,9 @@ toaster = ToastNotifier()
 login_url = "http://iauctb.daan.ir/login-identification-form#login-identification-form"
 username = environ.get("USER")
 password = environ.get("PASS")
+geckodriver = environ.get("GECKO")
 
-driver = webdriver.Firefox(
-    executable_path=r"C:\Users\hasan\.webdriver\geckodriver.exe")
+driver = webdriver.Firefox(executable_path=geckodriver)
 driver.get(login_url)
 
 # Entering user password

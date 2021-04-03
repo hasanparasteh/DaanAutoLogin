@@ -7,6 +7,7 @@ In order to run this script please consider creating a `.env` file in root direc
 ```
 USER=101932016491
 PASS=123456789
+GECKO=C:\Users\test\geckodriver.exe
 ```
 
 ### How to run?
