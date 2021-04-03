@@ -1,6 +1,6 @@
 # Skip Classes Bot
 
-This bot helps you to login in `http://iauctb.daan.ir/` and attend to your classes with out being physically available.
+This bot helps you to login in `http://iauctb.daan.ir/` and attend your classes without being physically available.
 
 In order to run this script please consider creating a `.env` file in root directory of project like below:
 
