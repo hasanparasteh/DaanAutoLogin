@@ -58,12 +58,14 @@ while not_in_class:
             if is_teacher_not_in_class(class_login_btn[i]):
                 toaster.show_toast("Teacher is not here...", "I have to retry logging in...")
                 sleep(60)  # wait for 1 min
-                driver.execute_script("location.reload()")
+                driver.refresh()
+                sleep(5)
 
             if is_session_not_reached(class_login_btn[i]):
                 toaster.show_toast("Too Soon....! I'll wait for 15 min :)")
                 sleep(900)  # wait for 15 min
-                driver.execute_script("location.reload()")
+                driver.refresh()
+                sleep(5)
 
             if not is_session_not_reached(class_login_btn[i]) and not is_teacher_not_in_class(class_login_btn[i]):
                 toaster.show_toast("I'm about to login!", "Don't make any sound..I'm going in :)")
